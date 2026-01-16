@@ -19,6 +19,23 @@
 
 
 
+.code-wrapper {
+  position: relative;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+pre {
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 14px;
+  overflow-x: auto;
+}
 
 
   .video-js video {
@@ -54,18 +71,19 @@
   }
 
   /* Keep diagram inside card */
-.diagram-wrapper {
-  width: 100%;
-  overflow: hidden; /* prevents breaking card */
-}
+  .diagram-wrapper {
+    width: 100%;
+    overflow: hidden;
+    /* prevents breaking card */
+  }
 
-/* Responsive diagram image */
-.diagram-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+  /* Responsive diagram image */
+  .diagram-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 
 
   /* The Modal (background) */
@@ -160,6 +178,10 @@
     background: rgba(255, 255, 255, 0.2);
   }
 </style>
+<!-- Prism.js for Python code highlighting -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Video.js CSS -->
@@ -428,7 +450,23 @@
             '<img src="' + data.digram + '" class="diagram-image" alt="diagram">' +
             '</div>'
           );
-          $("#nav-code").html(data.code);
+          const cleanCode = htmlToPlainText(data.code);
+
+          $("#nav-code").html(`
+            <div class="code-wrapper position-relative">
+              <button class="copy-btn btn btn-sm btn-dark">Copy</button>
+              <pre class="language-python"><code class="language-python">
+          <pre class="language-python"><code class="language-python">${escapeHtml(cleanCode)}</code></pre>
+
+              </code></pre>
+            </div>
+          `);
+
+          Prism.highlightAll();
+
+
+          Prism.highlightAll();
+
           $("#nav-process").html(data.process);
           $("#nav-get").html(data.get);
 
@@ -779,6 +817,32 @@
   });
 </script>
 
+<script>
+  $(document).on("click", ".copy-btn", function () {
+    const codeText = $(this).siblings("pre").text().trim();
+
+    navigator.clipboard.writeText(codeText).then(() => {
+      $(this).text("Copied!");
+      setTimeout(() => {
+        $(this).text("Copy");
+      }, 1500);
+    });
+  });
+
+  function htmlToPlainText(html) {
+  const tempDiv = document.createElement("div");
+  tempDiv.innerHTML = html;
+
+  // Replace <br> and <p> with new lines
+  tempDiv.querySelectorAll("br").forEach(br => br.replaceWith("\n"));
+  tempDiv.querySelectorAll("p").forEach(p => {
+    p.insertAdjacentText("afterend", "\n");
+  });
+
+  return tempDiv.innerText.trim();
+}
+
+</script>
 
 
 {% endblock %}
