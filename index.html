@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=0"
-    />
-    <title>VERITON Technologies — STEM, AI, Robotics & Drones</title>
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="assets/plugins/fontawesome/css/fontawesome.min.css"
-    />
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
- 
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <title>VERITON Technologies — STEM, AI, Robotics & Drones</title>
 
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png" />
 
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .home-slide h1 {
+        font-size: 28px;
+      }
+      .home-slide p {
+        font-size: 14px;
+      }
+      .girl-slide-img {
+        margin-top: 30px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEQF4BG85B"></script>
     <script>
@@ -724,7 +745,20 @@
     
  
       <script src="assets/js/script.js"></script>
-     
+     <script>
+ 
+
+  $('.mentoring-course').owlCarousel({
+    loop: true,
+    margin: 15,
+    autoplay: true,
+    responsive: {
+      0: { items: 1 },
+      576: { items: 2 },
+      992: { items: 4 }
+    }
+  });
+</script>
 
   </body>
 </html>
