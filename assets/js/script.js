@@ -107,14 +107,13 @@ Version      : 1.0
 		$('main-wrapper').removeClass('slide-nav');
 	});
 	
-	// Select 2
-	
-	if ($('.select').length > 0) {
-		$('.select').select2({
-			minimumResultsForSearch: -1,
-			width: '100%'
-		});
-	}
+	// Select 2 - Disabled (Select2 library not loaded)
+	// if ($('.select').length > 0) {
+	// 	$('.select').select2({
+	// 		minimumResultsForSearch: -1,
+	// 		width: '100%'
+	// 	});
+	// }
 	
 	// tooltip
 	
