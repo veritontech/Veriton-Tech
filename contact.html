@@ -7,7 +7,9 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modern-header.css">
 
     <style>
       * {
@@ -61,40 +63,49 @@
 
 
 </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEQF4BG85B"></script>
+    <!-- Google tag (gtag.js) - Disabled for local development -->
+    <!-- Enable only in production -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEQF4BG85B"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-JEQF4BG85B');
-    </script>
+    </script> -->
 <body>
 <div class="main-wrapper">
 
-<!-- ================= HEADER (SAME AS HOME) ================= -->
-<header class="header">
-    <div class="header-fixed">
-        <nav class="navbar navbar-expand-lg header-nav scroll-sticky">
-            <div class="container">
-                <div class="navbar-header">
-                    <a id="mobile_btn" href="javascript:void(0);">
-                        <span class="bar-icon"><span></span><span></span><span></span></span>
-                    </a>
-                    <a href="index.html" class="navbar-brand logo">
-                        <img src="assets/img/logo.png" class="img-fluid" alt="Veriton Technologies">
-                    </a>
-                </div>
+<!-- ================= MODERN HEADER ================= -->
+<header class="modern-header">
+    <div class="header-container">
+        <!-- Logo -->
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Veriton Technologies" />
+            </a>
+        </div>
 
-                <div class="main-menu-wrapper">
-                    <ul class="main-nav"> 
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li class="active"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+        <!-- Hamburger Menu -->
+        <button class="hamburger-menu" id="hamburger-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navigation -->
+        <nav class="header-nav" id="header-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Courses</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="header-cta">
+            <a href="https://lms.veriton.tech/userlogin/" target="_blank" class="cta-button">Sign In</a>
+        </div>
+    </div>
+</header>
 
                 <ul class="nav header-navbar-rht">
                     <li class="nav-item">
@@ -305,6 +316,7 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
  
 <script src="assets/js/script.js"></script>
+<script src="assets/js/modern-header.js"></script>
  
 
 </body>

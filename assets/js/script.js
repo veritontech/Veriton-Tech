@@ -126,26 +126,26 @@ Version      : 1.0
 
 	// Home popular mentor slider
 
-	if($('.owl-carousel.mentoring-course').length > 0 ){
-		var owl = $('.owl-carousel.mentoring-course');
-	      	owl.owlCarousel({
-	        margin: 25,
-	        nav : false,
-	        nav: true,
-	        loop: true,
-	        responsive: {
-	          	0: {
-	            	items: 1
-	          	},
-	          	768 : {
-	            	items: 3
-	          	},
-	          	1170: {
-	            	items: 4
-	          	}
-	        }
-	    });
-    }
+	// if($('.owl-carousel.mentoring-course').length > 0 ){
+	// 	var owl = $('.owl-carousel.mentoring-course');
+	//       	owl.owlCarousel({
+	//         margin: 25,
+	//         nav : false,
+	//         nav: true,
+	//         loop: true,
+	//         responsive: {
+	//           	0: {
+	//             	items: 1
+	//           	},
+	//           	768 : {
+	//             	items: 3
+	//           	},
+	//           	1170: {
+	//             	items: 4
+	//           	}
+	//         }
+	//     });
+    // }
 
     // Treand Course
 
@@ -172,28 +172,28 @@ Version      : 1.0
 
     // Leading Companies
 
-	if($('.owl-carousel.lead-group-slider').length > 0 ){
-		var owl = $('.owl-carousel.lead-group-slider');
-      		owl.owlCarousel({
-         		margin: 24,
-		         nav : false,
-		         nav: true,
-		         loop: true,
-					autoplay:true,
-					autoplaySpeed: 2000,
-			         responsive: {
-		          		0: {
-		            	items: 1
-		          		},
-		          		768 : {
-		            	items: 4
-		          		},
-		          		1170: {
-		            	items: 6
-		          		}
-	        			}
-	    		});
-    }
+	// if($('.owl-carousel.lead-group-slider').length > 0 ){
+	// 	var owl = $('.owl-carousel.lead-group-slider');
+    //   		owl.owlCarousel({
+    //      		margin: 24,
+	// 	         nav : false,
+	// 	         nav: true,
+	// 	         loop: true,
+	// 				autoplay:true,
+	// 				autoplaySpeed: 2000,
+	// 		         responsive: {
+	// 	          		0: {
+	// 	            	items: 1
+	// 	          		},
+	// 	          		768 : {
+	// 	            	items: 4
+	// 	          		},
+	// 	          		1170: {
+	// 	            	items: 6
+	// 	          		}
+	//         			}
+	//     		});
+    // }
 	
 	// Feature Instructors
 

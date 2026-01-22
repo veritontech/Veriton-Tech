@@ -1434,9 +1434,16 @@ button.bg-danger:hover {
 #mobile_btn {
 	display: none;
 	margin-right: 30px;
+	cursor: pointer;
+}
+#mobile_btn.hidden-mobile-btn {
+	display: none !important;
 }
 html.menu-opened body {
     overflow: hidden;
+}
+.menu-opened .sidebar-overlay {
+	display: block;
 }
 
 /*-----------------
@@ -10161,6 +10168,9 @@ input[type=password]::-ms-clear
 		top: 4px;
 		position: relative;
 	}
+	#mobile_btn.hidden-mobile-btn {
+		display: none !important;
+	}
 	.dropdown-menu.dropdown-menu-right {
 		margin-top: 5px;
 	}
@@ -12419,11 +12429,11 @@ input[type=password]::-ms-clear
 
     /* Ensure text content is visible */
     h1, h2, h3, h4, h5, h6, p, span, a, li, div {
-        display: inherit !important;
-        visibility: visible !important;
+        /* display: inherit !important;
+        visibility: visible !important; */
         opacity: 1 !important;
-        width: auto !important;
-        height: auto !important;
+        /* width: auto !important;
+        height: auto !important; */
     }
 
     /* Show hidden course/feature boxes */
