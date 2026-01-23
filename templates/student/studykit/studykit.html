@@ -241,86 +241,7 @@ pre {
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xl-8 col-xxl-7">
-      <div class="card">
-        <div id="lesson-details" class="card-body">
-          <div id="video-container" style="display:none;">
-            <video id="lessonVideo" class="video-js vjs-default-skin" controls preload="auto"
-              oncontextmenu="return false;" data-setup="{}">
-              Your browser does not support HTML5 video.
-            </video>
-          </div>
-
-
-
-          <img id="video-placeholder" src="/static/image/girls_working.jpeg" alt="Video Placeholder"
-            style="width: 100%; cursor: pointer" />
-
-          <!-- Tabs for displaying content -->
-          <div class="course-details-tab style-2 mt-4">
-            <nav>
-              <div class="nav nav-tabs tab-auto" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
-                  type="button" role="tab" aria-controls="nav-about" aria-selected="true">
-                  About
-                </button>
-                <button class="nav-link" id="nav-reqmaterial-tab" data-bs-toggle="tab" data-bs-target="#nav-reqmaterial"
-                  type="button" role="tab" aria-controls="nav-reqmaterial" aria-selected="false">
-                  Required Material
-                </button>
-                <button class="nav-link" id="nav-digram-tab" data-bs-toggle="tab" data-bs-target="#nav-digram"
-                  type="button" role="tab" aria-controls="nav-digram" aria-selected="false">
-                  Circuit Diagram
-                </button>
-                <button class="nav-link" id="nav-code-tab" data-bs-toggle="tab" data-bs-target="#nav-code" type="button"
-                  role="tab" aria-controls="nav-code" aria-selected="false">
-                  Code
-                </button>
-                <button class="nav-link" id="nav-process-tab" data-bs-toggle="tab" data-bs-target="#nav-process"
-                  type="button" role="tab" aria-controls="nav-process" aria-selected="false">
-                  Procedure
-                </button>
-                <button class="nav-link" id="nav-get-tab" data-bs-toggle="tab" data-bs-target="#nav-get" type="button"
-                  role="tab" aria-controls="nav-get" aria-selected="false">
-                  What You Get
-                </button>
-              </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                <div class="about-content">
-                  Select a lesson to view details.
-                </div>
-              </div>
-              <div class="tab-pane fade" id="nav-reqmaterial" role="tabpanel" aria-labelledby="nav-reqmaterial-tab">
-                Required Material content will appear here.
-              </div>
-              <div class="tab-pane fade" id="nav-digram" role="tabpanel" aria-labelledby="nav-digram-tab">
-                Circuit Diagram content will appear here.
-              </div>
-              <div class="tab-pane fade" id="nav-code" role="tabpanel" aria-labelledby="nav-code-tab">
-                Code content will appear here.
-              </div>
-              <div class="tab-pane fade" id="nav-process" role="tabpanel" aria-labelledby="nav-process-tab">
-                Procedure content will appear here.
-              </div>
-              <div class="tab-pane fade" id="nav-get" role="tabpanel" aria-labelledby="nav-get-tab">
-                What You Get content will appear here.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="result-generating" style="display: none; text-align: center">
-          <h4>Generating results, please wait...</h4>
-        </div>
-        <div id="questions-details" class="card-body">
-          <div id="questions-container" class="mt-3"></div>
-          <canvas id="resultsChart"></canvas>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xl-4 col-xxl-5">
+     <div class="col-xl-4 col-xxl-5">
       <div class="custome-accordion">
         {% for module_name, lessons in grouped_lessons.items %}
         <div class="accordion-item card">
@@ -405,6 +326,86 @@ pre {
         {% endfor %}
       </div>
     </div>
+    <div class="col-xl-8 col-xxl-7">
+      <div class="card">
+        <div id="lesson-details" class="card-body">
+          <div id="video-container" style="display:none;">
+            <video id="lessonVideo" class="video-js vjs-default-skin" controls preload="auto"
+              oncontextmenu="return false;" data-setup="{}">
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+
+
+
+          <img id="video-placeholder" src="/static/image/girls_working.jpeg" alt="Video Placeholder"
+            style="width: 100%; cursor: pointer" />
+
+          <!-- Tabs for displaying content -->
+          <div class="course-details-tab style-2 mt-4">
+            <nav>
+              <div class="nav nav-tabs tab-auto" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
+                  type="button" role="tab" aria-controls="nav-about" aria-selected="true">
+                  About
+                </button>
+                <button class="nav-link" id="nav-reqmaterial-tab" data-bs-toggle="tab" data-bs-target="#nav-reqmaterial"
+                  type="button" role="tab" aria-controls="nav-reqmaterial" aria-selected="false">
+                  Required Material
+                </button>
+                <button class="nav-link" id="nav-digram-tab" data-bs-toggle="tab" data-bs-target="#nav-digram"
+                  type="button" role="tab" aria-controls="nav-digram" aria-selected="false">
+                  Circuit Diagram
+                </button>
+                <button class="nav-link" id="nav-code-tab" data-bs-toggle="tab" data-bs-target="#nav-code" type="button"
+                  role="tab" aria-controls="nav-code" aria-selected="false">
+                  Code
+                </button>
+                <button class="nav-link" id="nav-process-tab" data-bs-toggle="tab" data-bs-target="#nav-process"
+                  type="button" role="tab" aria-controls="nav-process" aria-selected="false">
+                  Procedure
+                </button>
+                <button class="nav-link" id="nav-get-tab" data-bs-toggle="tab" data-bs-target="#nav-get" type="button"
+                  role="tab" aria-controls="nav-get" aria-selected="false">
+                  What You Get
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                <div class="about-content">
+                  Select a lesson to view details.
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-reqmaterial" role="tabpanel" aria-labelledby="nav-reqmaterial-tab">
+                Required Material content will appear here.
+              </div>
+              <div class="tab-pane fade" id="nav-digram" role="tabpanel" aria-labelledby="nav-digram-tab">
+                Circuit Diagram content will appear here.
+              </div>
+              <div class="tab-pane fade" id="nav-code" role="tabpanel" aria-labelledby="nav-code-tab">
+                Code content will appear here.
+              </div>
+              <div class="tab-pane fade" id="nav-process" role="tabpanel" aria-labelledby="nav-process-tab">
+                Procedure content will appear here.
+              </div>
+              <div class="tab-pane fade" id="nav-get" role="tabpanel" aria-labelledby="nav-get-tab">
+                What You Get content will appear here.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="result-generating" style="display: none; text-align: center">
+          <h4>Generating results, please wait...</h4>
+        </div>
+        <div id="questions-details" class="card-body">
+          <div id="questions-container" class="mt-3"></div>
+          <canvas id="resultsChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+   
   </div>
 </div>
 <div id="image-viewer">
