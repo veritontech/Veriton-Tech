@@ -107,13 +107,14 @@ Version      : 1.0
 		$('main-wrapper').removeClass('slide-nav');
 	});
 	
-	// Select 2 - Disabled (Select2 library not loaded)
-	// if ($('.select').length > 0) {
-	// 	$('.select').select2({
-	// 		minimumResultsForSearch: -1,
-	// 		width: '100%'
-	// 	});
-	// }
+	// Select 2
+	
+	if ($('.select').length > 0) {
+		$('.select').select2({
+			minimumResultsForSearch: -1,
+			width: '100%'
+		});
+	}
 	
 	// tooltip
 	
@@ -126,26 +127,26 @@ Version      : 1.0
 
 	// Home popular mentor slider
 
-	// if($('.owl-carousel.mentoring-course').length > 0 ){
-	// 	var owl = $('.owl-carousel.mentoring-course');
-	//       	owl.owlCarousel({
-	//         margin: 25,
-	//         nav : false,
-	//         nav: true,
-	//         loop: true,
-	//         responsive: {
-	//           	0: {
-	//             	items: 1
-	//           	},
-	//           	768 : {
-	//             	items: 3
-	//           	},
-	//           	1170: {
-	//             	items: 4
-	//           	}
-	//         }
-	//     });
-    // }
+	if($('.owl-carousel.mentoring-course').length > 0 ){
+		var owl = $('.owl-carousel.mentoring-course');
+	      	owl.owlCarousel({
+	        margin: 25,
+	        nav : false,
+	        nav: true,
+	        loop: true,
+	        responsive: {
+	          	0: {
+	            	items: 1
+	          	},
+	          	768 : {
+	            	items: 3
+	          	},
+	          	1170: {
+	            	items: 4
+	          	}
+	        }
+	    });
+    }
 
     // Treand Course
 
@@ -172,28 +173,28 @@ Version      : 1.0
 
     // Leading Companies
 
-	// if($('.owl-carousel.lead-group-slider').length > 0 ){
-	// 	var owl = $('.owl-carousel.lead-group-slider');
-    //   		owl.owlCarousel({
-    //      		margin: 24,
-	// 	         nav : false,
-	// 	         nav: true,
-	// 	         loop: true,
-	// 				autoplay:true,
-	// 				autoplaySpeed: 2000,
-	// 		         responsive: {
-	// 	          		0: {
-	// 	            	items: 1
-	// 	          		},
-	// 	          		768 : {
-	// 	            	items: 4
-	// 	          		},
-	// 	          		1170: {
-	// 	            	items: 6
-	// 	          		}
-	//         			}
-	//     		});
-    // }
+	if($('.owl-carousel.lead-group-slider').length > 0 ){
+		var owl = $('.owl-carousel.lead-group-slider');
+      		owl.owlCarousel({
+         		margin: 24,
+		         nav : false,
+		         nav: true,
+		         loop: true,
+					autoplay:true,
+					autoplaySpeed: 2000,
+			         responsive: {
+		          		0: {
+		            	items: 1
+		          		},
+		          		768 : {
+		            	items: 4
+		          		},
+		          		1170: {
+		            	items: 6
+		          		}
+	        			}
+	    		});
+    }
 	
 	// Feature Instructors
 
@@ -263,7 +264,15 @@ Version      : 1.0
 	        }
 	    });
     }
- 
+	
+	// Slick testimonial three
+
+	if($('.mentor-testimonial.lazy').length > 0) {
+		$(".mentor-testimonial.lazy").slick({
+			lazyLoad: 'ondemand',
+			infinite: true
+		});
+	}
 
 	// Home header
 
@@ -373,7 +382,14 @@ Version      : 1.0
 			}
 		});
 
-	 
+	// Fade in scroll
+
+	// if($('.main-wrapper .aos').length>0){
+	// 	AOS.init({
+	// 		duration:1200,
+	// 		once:true
+	// 	});
+	// }
 
 	// Content div min height set
 	

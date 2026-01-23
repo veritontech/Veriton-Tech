@@ -1,107 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from dreamslms.dreamguystech.com/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Oct 2022 14:21:20 GMT -->
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+
     <title>VERITON Technologies — STEM, AI, Robotics & Drones</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png" />
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/modern-header.css" />
 
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    <link rel="stylesheet" href="assets/plugins/slick/slick.css">
-    <link rel="stylesheet" href="assets/plugins/slick/slick-theme.css">
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+        body {
+            overflow-x: hidden;
+        }
 
-    <link rel="stylesheet" href="assets/css/style.css">
+        .container {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 540px;
+            }
+
+            .home-slide h1 {
+                font-size: 28px;
+            }
+
+            .home-slide p {
+                font-size: 14px;
+            }
+
+            .girl-slide-img {
+                margin-top: 30px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                max-width: 100%;
+            }
+
+            body {
+                font-size: 14px;
+            }
+
+            .home-slide h1 {
+                font-size: 22px;
+            }
+
+            .home-slide p {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 
+<!-- Google tag (gtag.js) - Disabled for local development -->
+<!-- Enable only in production -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEQF4BG85B"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JEQF4BG85B');
+    </script> -->
+
 <body>
-
     <div class="main-wrapper">
+        <header class="modern-header">
+            <div class="header-container">
+                <!-- Logo -->
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="Veriton Technologies" />
+                    </a>
+                </div>
 
-        <header class="header">
-            <div class="header-fixed">
-                <nav class="navbar navbar-expand-lg header-nav scroll-sticky">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <a id="mobile_btn" href="javascript:void(0);">
-                                <span class="bar-icon">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </span>
-                            </a>
-                            <a href="index.html" class="navbar-brand logo">
-                                <img src="assets/img/logoveri.png" class="img-fluid" alt="Logo">
-                            </a>
-                        </div>
-                        <div class="main-menu-wrapper">
-                            <div class="menu-header">
-                                <a href="index.html" class="menu-logo">
-                                    <img src="assets/img/logoveri.png" class="img-fluid" alt="Logo">
-                                </a>
-                                <a id="menu_close" class="menu-close" href="javascript:void(0);">
-                                    <i class="fas fa-times"></i>
-                                </a>
-                            </div>
-                            <ul class="main-nav">
-                                <li class="">
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li class="">
-                                    <a href="aboutus.html">About Us</a>
-                                </li>
-                                <li class="">
-                                    <a href="index.html">Courses</a>
+                <!-- Hamburger Menu -->
+                <button class="hamburger-menu" id="hamburger-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-                                </li>
-                                <li class="">
-                                    <a href="contact.html">Contact</a>
-                                </li>
-                                <li class="login-link">
-                                    <a href="login.html">Login / Signup</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <ul class="nav header-navbar-rht">
-                            <li class="nav-item">
-                                <a class="nav-link header-sign" href="https://lms.veriton.tech/userlogin/">Sign In</a>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- Navigation -->
+                <nav class="header-nav" id="header-nav">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="#" class="nav-link">Courses</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </nav>
+
+                <!-- CTA Button -->
+                <div class="header-cta">
+                    <a href="https://lms.veriton.tech/userlogin/" target="_blank" class="cta-button">Sign In</a>
+                </div>
             </div>
         </header>
 
-
+        <!-- HERO -->
         <section class="home-slide d-flex align-items-center">
             <div class="container">
-                <div class="row ">
+                <div class="row">
                     <div class="col-md-7">
                         <div class="home-slide-face aos" data-aos="fade-up">
-                            <div class="home-slide-text ">
+                            <div class="home-slide-text">
                                 <h5>Future-Ready STEM Learning</h5>
-                                <h1>Building Tomorrow's Innovators Today</h1>
-                                <p>Practical learning designed for kids, teens and lifelong learners.</p>
+                                <h1>
+                                    Building Tomorrow's
+                                    Innovators Today
+                                </h1>
+                                <p>
+                                    Practical learning designed for kids, teens and lifelong
+                                    learners.
+                                </p>
                             </div>
+
                             <div class="banner-content">
-                                <form class="form" action="https://dreamslms.dreamguystech.com/html/course-list.html">
+                                <form class="form">
                                     <div class="form-inner">
                                         <div class="input-group">
                                             <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                                            <input type="email" class="form-control"
-                                                placeholder="Search STEM courses, robotics classes, AI training...">
+                                            <input type="text" class="form-control"
+                                                placeholder="Search STEM courses, robotics classes, AI training..." />
                                             <span class="drop-detail">
                                                 <select class="form-select select">
                                                     <option>Artificial Intelligence</option>
@@ -111,21 +167,23 @@
                                                     <option>Coding for Kids</option>
                                                 </select>
                                             </span>
-                                            <button class="btn btn-primary sub-btn" type="submit"><i
-                                                    class="fas fa-arrow-right"></i></button>
+
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                            <div class="trust-user">
-                                <p>Trusted by students, schools & training centers worldwide</p>
 
+                            <div class="trust-user">
+                                <p>
+                                    Trusted by students, schools & training centers worldwide
+                                </p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-5 d-flex align-items-center">
                         <div class="girl-slide-img aos" data-aos="fade-up">
-                            <img src="assets/img/Veriton/bannerimage.jpg" alt="">
+                            <img src="assets/img/img5.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -141,7 +199,7 @@
                                 <div class="blur-border course-radius align-items-center aos" data-aos="fade-up">
                                     <div class="online-course d-flex align-items-center">
                                         <div class="course-img">
-                                            <img src="assets/img/gratuate-icon.svg" alt="">
+                                            <img src="assets/img/pencil-icon.svg" alt="" />
                                         </div>
                                         <div class="course-inner-content">
                                             <h4><span>100</span>+</h4>
@@ -156,7 +214,7 @@
                                 <div class="blur-border course-radius aos" data-aos="fade-up">
                                     <div class="online-course d-flex align-items-center">
                                         <div class="course-img">
-                                            <img src="assets/img/cources-icon.svg" alt="">
+                                            <img src="assets/img/cources-icon.svg" alt="" />
                                         </div>
                                         <div class="course-inner-content">
                                             <h4><span>9</span>+</h4>
@@ -171,10 +229,10 @@
                                 <div class="blur-border course-radius aos" data-aos="fade-up">
                                     <div class="online-course d-flex align-items-center">
                                         <div class="course-img">
-                                            <img src="assets/img/certificate-icon.svg" alt="">
+                                            <img src="assets/img/certificate-icon.svg" alt="" />
                                         </div>
                                         <div class="course-inner-content">
-                                            <h4><span>250</span></h4>
+                                            <h4><span>250</span>+</h4>
                                             <p>Projects Built</p>
                                         </div>
                                     </div>
@@ -186,11 +244,11 @@
                                 <div class="blur-border course-radius aos" data-aos="fade-up">
                                     <div class="online-course d-flex align-items-center">
                                         <div class="course-img">
-                                            <img src="assets/img/gratuate-icon.svg" alt="">
+                                            <img src="assets/img/gratuate-icon.svg" alt="" />
                                         </div>
                                         <div class="course-inner-content">
                                             <h4><span>40</span>+</h4>
-                                            <p>Online Students</p>
+                                            <p>Active Learners</p>
                                         </div>
                                     </div>
                                 </div>
@@ -200,7 +258,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="section how-it-works">
             <div class="container">
@@ -210,19 +267,24 @@
                         <h2>STEM Categories</h2>
                     </div>
                     <div class="all-btn all-category d-flex align-items-center">
-                        <a href="index.html" class="btn btn-primary">All Categories</a>
+                        <a href="#" class="btn btn-primary">All Categories</a>
                     </div>
                 </div>
+
                 <div class="section-text aos" data-aos="fade-up">
-                    <p>Veriton empowers students with real-world STEM skills through hands-on training in Robotics, AI,
-                        Drones, Automation, and Future Technologies.</p>
+                    <p>
+                        Veriton empowers students with real-world STEM skills through
+                        hands-on training in Robotics, AI, Drones, Automation, and Future
+                        Technologies.
+                    </p>
                 </div>
+
                 <div class="owl-carousel mentoring-course owl-theme aos" data-aos="fade-up">
-                    <div class="feature-box text-center ">
+                    <div class="feature-box text-center">
                         <div class="feature-bg">
                             <div class="feature-header">
                                 <div class="feature-icon">
-                                    <img src="assets/img/Veriton/robotic-technology.png" alt="">
+                                    <img src="assets/img/robotic-technology.png" alt="" />
                                 </div>
                                 <div class="feature-cont">
                                     <div class="feature-text">Robotics Programming</div>
@@ -231,11 +293,12 @@
                             <p>25 Instructors</p>
                         </div>
                     </div>
-                    <div class="feature-box text-center ">
+
+                    <div class="feature-box text-center">
                         <div class="feature-bg">
                             <div class="feature-header">
                                 <div class="feature-icon">
-                                    <img src="assets/img/Veriton/ai-and-programming.png" alt="">
+                                    <img src="assets/img/ai-and-programming.png" alt="" />
                                 </div>
                                 <div class="feature-cont">
                                     <div class="feature-text">AI & Machine Learning</div>
@@ -244,11 +307,12 @@
                             <p>28 Instructors</p>
                         </div>
                     </div>
-                    <div class="feature-box text-center ">
+
+                    <div class="feature-box text-center">
                         <div class="feature-bg">
                             <div class="feature-header">
                                 <div class="feature-icon">
-                                    <img src="assets/img/Veriton/drone-technology.png" alt="">
+                                    <img src="assets/img/drone-technology.png" alt="" />
                                 </div>
                                 <div class="feature-cont">
                                     <div class="feature-text">Drone Technology</div>
@@ -257,11 +321,12 @@
                             <p>18 Instructors</p>
                         </div>
                     </div>
-                    <div class="feature-box text-center ">
+
+                    <div class="feature-box text-center">
                         <div class="feature-bg">
                             <div class="feature-header">
                                 <div class="feature-icon">
-                                    <img src="assets/img/Veriton/ai-and-programming.png" alt="">
+                                    <img src="assets/img/ai-and-programming.png" alt="" />
                                 </div>
                                 <div class="feature-cont">
                                     <div class="feature-text">IoT & Automation</div>
@@ -270,11 +335,12 @@
                             <p>20 Instructors</p>
                         </div>
                     </div>
-                    <div class="feature-box text-center ">
+
+                    <div class="feature-box text-center">
                         <div class="feature-bg">
                             <div class="feature-header">
                                 <div class="feature-icon">
-                                    <img src="assets/img/categories-icon-04.png" alt="">
+                                    <img src="assets/img/categories-icon-04.png" alt="" />
                                 </div>
                                 <div class="feature-cont">
                                     <div class="feature-text">Python for Kids</div>
@@ -283,10 +349,23 @@
                             <p>22 Instructors</p>
                         </div>
                     </div>
+
+                    <div class="feature-box text-center">
+                        <div class="feature-bg">
+                            <div class="feature-header">
+                                <div class="feature-icon">
+                                    <img src="assets/img/3d-printing.png" alt="" />
+                                </div>
+                                <div class="feature-cont">
+                                    <div class="feature-text">3D Printing & Design</div>
+                                </div>
+                            </div>
+                            <p>15 Instructors</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
 
         <section class="section new-course">
             <div class="container">
@@ -295,32 +374,37 @@
                         <span>What’s New</span>
                         <h2>Discover Future-Ready Skills</h2>
                     </div>
-                    <div class="all-btn all-category d-flex align-items-center">
-                        <a href="course-list.html" class="btn btn-primary">All Courses</a>
-                    </div>
+
                 </div>
                 <div class="section-text aos" data-aos="fade-up">
-                    <p class="mb-0">Age-appropriate curriculum designed to spark curiosity and build real-world tech
-                        skills through hands-on projects.</p>
+                    <p class="mb-0">
+                        Age-appropriate curriculum designed to spark curiosity and build real-world tech skills through
+                        hands-on projects.
+                    </p>
                 </div>
+
                 <div class="course-feature">
                     <div class="row">
+                        <!-- Robotics -->
                         <div class="col-lg-4 col-md-6 d-flex">
                             <div class="course-box d-flex aos" data-aos="fade-up">
                                 <div class="product">
                                     <div class="product-img">
-                                        <a href="course-details.html">
-                                            <img class="img-fluid" alt="" src="assets/img/Veriton/Instructor1.jpg">
+                                        <a href="#">
+                                            <img class="img-fluid" alt="" src="assets/img/img2.jpg" />
                                         </a>
 
                                     </div>
                                     <div class="product-content">
                                         <div class="course-group d-flex">
                                             <div class="course-group-img d-flex">
-                                                <a href="instructor-profile.html"><img src="assets/img/user/user1.jpg"
-                                                        alt="" class="img-fluid"></a>
+                                                <a href="#">
+                                                    <img src="assets/img/user/user1.jpg" alt="" class="img-fluid" />
+                                                </a>
                                                 <div class="course-name">
-                                                    <h4><a href="index.html">Aarti P.</a></h4>
+                                                    <h4>
+                                                        <a href="#">Aarti P.</a>
+                                                    </h4>
                                                     <p>Instructor</p>
                                                 </div>
                                             </div>
@@ -328,29 +412,36 @@
                                                 <a href="#"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                         </div>
-                                        <h3 class="title instructor-text"><a href="course-details.html">Robotics for
-                                                Beginners: Build & Program Bots</a></h3>
 
+                                        <h3 class="title instructor-text">
+                                            <a href="#">Robotics for Beginners: Build & Program Bots</a>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Drone Technology -->
                         <div class="col-lg-4 col-md-6 d-flex">
                             <div class="course-box d-flex aos" data-aos="fade-up">
                                 <div class="product">
                                     <div class="product-img">
-                                        <a href="course-details.html">
-                                            <img class="img-fluid" alt="" src="assets/img/Veriton/Instructor2.jpg">
+                                        <a href="#">
+                                            <img class="img-fluid" alt="" src="assets/img/img4.jpg" />
                                         </a>
 
                                     </div>
+
                                     <div class="product-content">
                                         <div class="course-group d-flex">
                                             <div class="course-group-img d-flex">
-                                                <a href="instructor-profile.html"><img src="assets/img/user/user2.jpg"
-                                                        alt="" class="img-fluid"></a>
+                                                <a href="#">
+                                                    <img src="assets/img/user/user2.jpg" alt="" class="img-fluid" />
+                                                </a>
                                                 <div class="course-name">
-                                                    <h4><a href="index.html">Imran Khan</a></h4>
+                                                    <h4>
+                                                        <a href="#">Imran Khan</a>
+                                                    </h4>
                                                     <p>Instructor</p>
                                                 </div>
                                             </div>
@@ -358,29 +449,40 @@
                                                 <a href="#"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                         </div>
-                                        <h3 class="title instructor-text"><a href="course-details.html">Drone
-                                                Technology: Flight, Safety & Mapping</a></h3>
+
+                                        <h3 class="title instructor-text">
+                                            <a href="#">Drone Technology: Flight, Safety & Mapping</a>
+                                        </h3>
+
+
+
 
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- AI for Kids -->
                         <div class="col-lg-4 col-md-6 d-flex">
                             <div class="course-box d-flex aos" data-aos="fade-up">
                                 <div class="product">
                                     <div class="product-img">
-                                        <a href="course-details.html">
-                                            <img class="img-fluid" alt="" src="assets/img/Veriton/Instructor3.jpg">
+                                        <a href="#">
+                                            <img class="img-fluid" alt="" src="assets/img/img3.jpg" />
                                         </a>
 
                                     </div>
+
                                     <div class="product-content">
                                         <div class="course-group d-flex">
                                             <div class="course-group-img d-flex">
-                                                <a href="instructor-profile.html"><img src="assets/img/user/user2.jpg"
-                                                        alt="" class="img-fluid"></a>
+                                                <a href="#">
+                                                    <img src="assets/img/user/user5.jpg" alt="" class="img-fluid" />
+                                                </a>
                                                 <div class="course-name">
-                                                    <h4><a href="">Saifuddin Shaikh</a></h4>
+                                                    <h4>
+                                                        <a href="#">Saifuddin Shaikh</a>
+                                                    </h4>
                                                     <p>Instructor</p>
                                                 </div>
                                             </div>
@@ -388,18 +490,22 @@
                                                 <a href="#"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                         </div>
-                                        <h3 class="title instructor-text"><a href="course-details.html">AI for Kids:
-                                                Learn Artificial Intelligence Basics</a></h3>
+
+                                        <h3 class="title instructor-text">
+                                            <a href="#">AI for Kids: Learn Artificial Intelligence Basics</a>
+                                        </h3>
+
 
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
         </section>
-
 
         <section class="section master-skill">
             <div class="container">
@@ -411,55 +517,62 @@
                                 <h2>Master Future-Ready STEM Skills</h2>
                             </div>
                         </div>
+
                         <div class="section-text aos" data-aos="fade-up">
-                            <p>At Veriton, students learn by doing — building robots, programming drones, coding AI
-                                models and creating real-world projects that boost confidence, curiosity and creativity.
+                            <p>
+                                At Veriton, students learn by doing — building robots,
+                                programming drones, coding AI models and creating real-world
+                                projects that boost confidence, curiosity and creativity.
                             </p>
                         </div>
+
                         <div class="career-group aos" data-aos="fade-up">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 d-flex">
                                     <div class="certified-group blur-border d-flex">
                                         <div class="get-certified d-flex align-items-center">
                                             <div class="blur-box">
-                                                <div class="certified-img ">
-                                                    <img src="assets/img/icon/icon-1.svg" alt="" class="img-fluid">
+                                                <div class="certified-img">
+                                                    <img src="assets/img/icon/icon-1.svg" alt="" class="img-fluid" />
                                                 </div>
                                             </div>
                                             <p>Learn from certified STEM mentors</p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-lg-6 col-md-6 d-flex">
                                     <div class="certified-group blur-border d-flex">
                                         <div class="get-certified d-flex align-items-center">
                                             <div class="blur-box">
-                                                <div class="certified-img ">
-                                                    <img src="assets/img/icon/icon-2.svg" alt="" class="img-fluid">
+                                                <div class="certified-img">
+                                                    <img src="assets/img/icon/icon-2.svg" alt="" class="img-fluid" />
                                                 </div>
                                             </div>
                                             <p>Hands-on labs and real-world projects</p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-lg-6 col-md-6 d-flex">
                                     <div class="certified-group blur-border d-flex">
                                         <div class="get-certified d-flex align-items-center">
                                             <div class="blur-box">
-                                                <div class="certified-img ">
-                                                    <img src="assets/img/icon/icon-3.svg" alt="" class="img-fluid">
+                                                <div class="certified-img">
+                                                    <img src="assets/img/icon/icon-3.svg" alt="" class="img-fluid" />
                                                 </div>
                                             </div>
                                             <p>Certification-focused learning paths</p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-lg-6 col-md-6 d-flex">
                                     <div class="certified-group blur-border d-flex">
                                         <div class="get-certified d-flex align-items-center">
                                             <div class="blur-box">
-                                                <div class="certified-img ">
-                                                    <img src="assets/img/icon/icon-4.svg" alt="" class="img-fluid">
+                                                <div class="certified-img">
+                                                    <img src="assets/img/icon/icon-4.svg" alt="" class="img-fluid" />
                                                 </div>
                                             </div>
                                             <p>Future-ready curriculum aligned to industry</p>
@@ -469,15 +582,15 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-5 col-md-12 d-flex align-items-end">
                         <div class="career-img aos" data-aos="fade-up">
-                            <img src="assets/img/Veriton/masterthinking.png" alt="" class="img-fluid">
+                            <img src="assets/img/thinking.png" alt="" class="img-fluid" />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <section class="section lead-companies">
             <div class="container">
@@ -491,148 +604,164 @@
                     <div class="lead-group-slider owl-carousel owl-theme">
                         <div class="item">
                             <div class="lead-img">
-                                <img class="img-fluid" alt="" src="assets/img/Veriton/Shaheen Logo-03.png">
+                                <img class="img-fluid" alt="" src="assets/img/Shaheen Logo-03.png" />
                             </div>
-
+                        </div>
+                        <div class="item">
+                            <div class="lead-img">
+                                <img class="img-fluid" alt="" src="" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="lead-img">
+                                <img class="img-fluid" alt="" src="" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="lead-img">
+                                <img class="img-fluid" alt="" src="" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="lead-img">
+                                <img class="img-fluid" alt="" src="" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="lead-img">
+                                <img class="img-fluid" alt="" src="" />
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
-
 
         <section class="section share-knowledge">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="knowledge-img aos" data-aos="fade-up">
-                            <img src="assets/img/Veriton/inspireimage.png" alt="" class="img-fluid">
+                            <img src="assets/img/coding-teaching-logo.png" alt="" class="img-fluid" />
                         </div>
                     </div>
+
                     <div class="col-md-6 d-flex align-items-center">
                         <div class="join-mentor aos" data-aos="fade-up">
                             <h2>Want to inspire young minds? Become a Veriton Mentor</h2>
-                            <p>Join our mission to empower the next generation with STEM skills. Teach Robotics, AI,
-                                Coding, Drones, IoT — and help students build real-world innovations.</p>
-
+                            <p>
+                                Join our mission to empower the next generation with STEM
+                                skills. Teach Robotics, AI, Coding, Drones, IoT — and help
+                                students build real-world innovations.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
         <footer class="footer">
-
             <div class="footer-top aos" data-aos="fade-up">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
-
                             <div class="footer-widget footer-about">
                                 <div class="footer-logo">
-                                    <img src="assets/img/logoveri.png" alt="logo">
+                                    <img src="assets/img/logo.png" alt="logo" />
                                 </div>
                                 <div class="footer-about-content">
-                                    <p>At Veriton, we are passionate about empowering the next generation through
-                                        innovative STEM education.Our training center specializes in essential fields
-                                        such as Artificial Intelligence, Robotics, Machine Learning, and Drone Making,
-                                        providing students with the skills they need to thrive in a technology-driven
-                                        world.</p>
+                                    <p>
+                                        At Veriton, we are passionate about empowering the next
+                                        generation through innovative STEM education.Our training
+                                        center specializes in essential fields such as Artificial
+                                        Intelligence, Robotics, Machine Learning, and Drone
+                                        Making, providing students with the skills they need to
+                                        thrive in a technology-driven world.
+                                    </p>
                                 </div>
                             </div>
-
                         </div>
                         <div class="col-lg-2 col-md-6">
-
                             <div class="footer-widget footer-menu">
                                 <h2 class="footer-title">Menu</h2>
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="aboutus.html">AboutUS</a></li>
+                                    <li><a href="about.html">AboutUs</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
-
                         </div>
                         <div class="col-lg-2 col-md-6">
-
                             <div class="footer-widget footer-menu">
                                 <h2 class="footer-title">Sign In</h2>
                                 <ul>
-                                    <li><a href="https://lms.veriton.tech/userlogin/">Sign In</a></li>
-
+                                    <li>
+                                        <a target="_blank" href="https://lms.veriton.tech/userlogin/">Sign In</a>
+                                    </li>
                                 </ul>
                             </div>
-
                         </div>
                         <div class="col-lg-4 col-md-6">
-
                             <div class="footer-widget footer-contact">
                                 <h2 class="footer-title">News letter</h2>
                                 <div class="news-letter">
                                     <form>
                                         <input type="text" class="form-control" placeholder="Enter your email address"
-                                            name="email">
+                                            name="email" />
                                     </form>
                                 </div>
                                 <div class="footer-contact-info">
                                     <div class="footer-address">
-                                        <img src="assets/img/icon/icon-20.svg" alt="" class="img-fluid">
-                                        <p> Office Aid Building, S.T.P.I, Chikalthana,Aurangabad.<br> Maharshtra, 431001
+                                        <img src="assets/img/icon/icon-20.svg" alt="" class="img-fluid" />
+                                        <p>
+                                            Office Aid Building, S.T.P.I, Chikalthana,
+                                            Aurangabad.<br />
+                                            Maharshtra, 431001
                                         </p>
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-
 
             <div class="footer-bottom">
                 <div class="container">
-
                     <div class="copyright">
                         <div class="row">
-                            <div class="col-md-6">
-
-                            </div>
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="copyright-text">
-                                    <p class="mb-0">&copy; 2025 Veriton Technology. All rights reserved.</p>
+                                    <p class="mb-0">
+                                        &copy; 2025 Veriton Technology. All rights reserved.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </footer>
-
     </div>
-
-
-    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!-- ============== SCRIPTS (only once, in this order) ============== -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/jquery.waypoints.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-
-    <script src="assets/plugins/select2/js/select2.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <script src="assets/plugins/slick/slick.js"></script>
-
-
     <script src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/modern-header.js"></script>
+    <!-- <script>
+        $('.mentoring-course').owlCarousel({
+            loop: true,
+            margin: 15,
+            autoplay: true,
+            responsive: {
+                0: { items: 1 },
+                576: { items: 2 },
+                992: { items: 4 }
+            }
+        });
+    </script> -->
 
-<!-- Mirrored from dreamslms.dreamguystech.com/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Oct 2022 14:22:23 GMT -->
+</body>
 
 </html>
