@@ -1,0 +1,227 @@
+VERITON WEBSITE - COMPLETE FILE STRUCTURE
+==========================================
+
+veriton-website/
+│
+├── 📄 START-HERE.md              ⭐ BEGIN HERE - Quick start guide
+├── 📄 README.md                  📚 Complete documentation
+├── 📄 SETUP-GUIDE.md             📖 Step-by-step setup (beginners)
+├── 📄 WEBSITE-OVERVIEW.md        🌐 Visual overview of pages
+├── 📄 TROUBLESHOOTING.md         🔧 Solutions to common issues
+├── 📄 PROJECT-STRUCTURE.md       📁 Understanding the codebase
+├── 📄 QUICK-REFERENCE.md         ⚡ Commands cheat sheet
+├── 📄 FILE-TREE.txt              📋 This file
+│
+├── 📄 index.html                 🌐 HTML entry point
+├── 📄 package.json               📦 Dependencies and scripts
+├── 📄 package-lock.json          🔒 Locked dependency versions (auto-generated)
+├── 📄 tsconfig.json              ⚙️  TypeScript configuration
+├── 📄 tsconfig.node.json         ⚙️  TypeScript for Node files
+├── 📄 vite.config.ts             ⚙️  Vite build tool config
+├── 📄 postcss.config.mjs         ⚙️  PostCSS configuration
+├── 📄 .gitignore                 🚫 Git ignore rules
+│
+├── 📁 src/                       🎯 SOURCE CODE - Everything you edit
+│   │
+│   ├── 📄 main.tsx               🚪 Application entry point
+│   │
+│   ├── 📁 app/                   💼 Main application folder
+│   │   │
+│   │   ├── 📄 App.tsx            🏠 Main component (navigation & layout)
+│   │   │
+│   │   ├── 📁 pages/             📄 Full page components (6 pages)
+│   │   │   ├── HomePage.tsx           🏠 Landing page
+│   │   │   ├── ProgramsPage.tsx       📚 Programs listing
+│   │   │   ├── MarketNeedsPage.tsx    📊 Market analysis
+│   │   │   ├── SolutionsPage.tsx      💡 Solutions overview
+│   │   │   ├── AboutPage.tsx          ℹ️  About us
+│   │   │   └── ContactPage.tsx        📧 Contact page
+│   │   │
+│   │   └── 📁 components/        🧩 Reusable components (25+ files)
+│   │       │
+│   │       ├── 📁 layout/        🗂️  Layout components
+│   │       │   ├── Header.tsx         🔝 Navigation bar
+│   │       │   └── Footer.tsx         🔽 Site footer
+│   │       │
+│   │       ├── 📁 home/          🏠 Home page sections (7 components)
+│   │       │   ├── HeroSection.tsx               🎯 Hero banner
+│   │       │   ├── ProgramsOverview.tsx          📋 Programs preview
+│   │       │   ├── TeachingPlatforms.tsx         ⭐ NEW! School vs Individual
+│   │       │   ├── MarketNeedsPreview.tsx        📊 Market snapshot
+│   │       │   ├── ProblemSolutionPreview.tsx    💡 Problems intro
+│   │       │   ├── WhyVeriton.tsx                ✨ Value props
+│   │       │   └── CTASection.tsx                🎯 Call-to-action
+│   │       │
+│   │       ├── 📁 programs/      📚 Programs page components
+│   │       │   ├── ProgramsList.tsx
+│   │       │   └── ProgramDetails.tsx
+│   │       │
+│   │       ├── 📁 market-needs/  📊 Market needs components
+│   │       │   ├── IndustryTrends.tsx
+│   │       │   └── SkillsGap.tsx
+│   │       │
+│   │       ├── 📁 solutions/     💡 Solutions components
+│   │       │   └── ProblemSolution.tsx
+│   │       │
+│   │       ├── 📁 about/         ℹ️  About page components
+│   │       │   ├── MissionVision.tsx
+│   │       │   ├── Timeline.tsx
+│   │       │   └── LearningMethodology.tsx
+│   │       │
+│   │       ├── 📁 contact/       📧 Contact page components
+│   │       │   ├── ContactForm.tsx
+│   │       │   └── InfoPanel.tsx
+│   │       │
+│   │       ├── 📁 figma/         🎨 Figma system components
+│   │       │   └── ImageWithFallback.tsx  ⚠️  DON'T EDIT
+│   │       │
+│   │       └── 📁 ui/            🎨 UI components (40+ files)
+│   │           ├── button.tsx         🔘 Buttons
+│   │           ├── card.tsx           🗂️  Cards
+│   │           ├── input.tsx          ✏️  Text inputs
+│   │           ├── form.tsx           📝 Forms
+│   │           ├── accordion.tsx      📂 Collapsible
+│   │           ├── dialog.tsx         💬 Modals
+│   │           ├── badge.tsx          🏷️  Badges
+│   │           ├── separator.tsx      ➖ Dividers
+│   │           ├── tabs.tsx           📑 Tabs
+│   │           ├── tooltip.tsx        💡 Tooltips
+│   │           ├── ... (30+ more UI components)
+│   │           └── utils.ts           🛠️  Utility functions
+│   │
+│   └── 📁 styles/                🎨 CSS and styling
+│       ├── index.css              📄 Main CSS (imports others)
+│       ├── tailwind.css           🌊 Tailwind imports
+│       ├── theme.css              🎨 Custom theme (EDIT COLORS HERE)
+│       └── fonts.css              🔤 Font imports
+│
+├── 📁 .vscode/                   💻 VS Code settings
+│   └── extensions.json            🔌 Recommended extensions
+│
+├── 📁 node_modules/              📦 Dependencies (DON'T EDIT)
+│   └── ... (thousands of files)   ⚠️  Auto-generated by npm install
+│
+└── 📁 dist/                      🏭 Production build (DON'T EDIT)
+    └── ... (built files)          ⚠️  Created by npm run build
+
+
+LEGEND
+======
+📄 = File
+📁 = Folder
+⭐ = Important / New
+⚠️  = Don't edit manually
+🎯 = Start here
+✏️  = Safe to edit
+🚫 = Ignore this
+
+
+WHAT TO EDIT
+============
+✅ YES - Edit these:
+   - src/app/pages/*.tsx
+   - src/app/components/** (except figma/)
+   - src/app/App.tsx
+   - src/styles/theme.css
+   - src/styles/fonts.css
+
+⚠️  CAREFUL - Only if you know what you're doing:
+   - package.json
+   - vite.config.ts
+   - tsconfig.json
+   - src/main.tsx
+
+❌ NO - Don't edit:
+   - node_modules/
+   - dist/
+   - package-lock.json
+   - src/app/components/figma/
+
+
+COMPONENT COUNT
+===============
+Pages: 6
+  ├── Home
+  ├── Programs
+  ├── Market Needs
+  ├── Solutions
+  ├── About
+  └── Contact
+
+Feature Components: 19
+  ├── Layout: 2 (Header, Footer)
+  ├── Home: 7 (Hero, Programs, Platforms, Market, Problem, Why, CTA)
+  ├── Programs: 2
+  ├── Market Needs: 2
+  ├── Solutions: 1
+  ├── About: 3
+  └── Contact: 2
+
+UI Components: 40+
+  └── Buttons, Cards, Forms, Dialogs, etc.
+
+TOTAL: 65+ React components
+
+
+DEPENDENCIES
+============
+Production: 62 packages
+  ├── React & React DOM
+  ├── Radix UI components (30+ packages)
+  ├── Lucide React (icons)
+  ├── Motion (animations)
+  ├── React Hook Form
+  └── Many more...
+
+Development: 4 packages
+  ├── Vite
+  ├── Tailwind CSS
+  ├── TypeScript
+  └── React plugin
+
+
+FILE SIZES (APPROXIMATE)
+========================
+Total project: ~250 MB (mostly node_modules)
+Source code: ~500 KB
+Built output (dist/): ~200-300 KB (gzipped)
+
+
+QUICK NAVIGATION
+================
+Want to...                          Go to...
+----------                          --------
+Start the project                   START-HERE.md
+Understand pages                    WEBSITE-OVERVIEW.md
+Fix an issue                        TROUBLESHOOTING.md
+Find a file                         PROJECT-STRUCTURE.md
+Quick command                       QUICK-REFERENCE.md
+Change home page hero               src/app/components/home/HeroSection.tsx
+Change header/nav                   src/app/components/layout/Header.tsx
+Change colors                       src/styles/theme.css
+Add a page                          src/app/pages/ (create new file)
+Add a component                     src/app/components/ (in appropriate folder)
+
+
+DEVELOPMENT WORKFLOW
+====================
+1. npm install           (Run once, or when dependencies change)
+2. npm run dev           (Start dev server)
+3. Edit files in src/    (Auto-reloads browser)
+4. Check terminal        (For errors)
+5. Check browser F12     (For runtime errors)
+6. Ctrl+C                (Stop server when done)
+
+
+DEPLOYMENT WORKFLOW
+===================
+1. npm run build         (Build for production)
+2. Check dist/ folder    (Verify files created)
+3. npm run preview       (Test production build locally)
+4. Upload dist/ folder   (To your hosting service)
+
+
+CREATED: January 2026
+FRAMEWORK: React 18.3 + TypeScript + Vite + Tailwind CSS v4
+PURPOSE: STEM Education Platform for Veriton
+STATUS: Production Ready ✅
